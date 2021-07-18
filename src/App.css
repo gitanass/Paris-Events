@@ -1,0 +1,527 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #432fbf;
+}
+
+.NavLinking {
+  text-decoration: none;
+  margin: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 900;
+  border-radius: 13px;
+}
+
+.NavLinking:hover {
+  background-color: #5e4ecb;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+
+i {
+  padding-right: 10%;
+}
+
+.NavLinking:focus {
+  background-color: #5e4ecb;
+}
+
+.Title {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1;
+  font-weight: 55;
+}
+
+.trait {
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 2%;
+  opacity: 30%;
+}
+.trait-prime {
+  width: 70%;
+  border: 1px solid black;
+  opacity: 8%;
+  margin-top: 2%;
+}
+
+.In-put {
+  height: 40px;
+  width: 30%;
+  border-radius: 15px;
+}
+
+.cap-In-put {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+
+.card {
+  display: flex;
+  justify-content: center;
+  /* max-height: 300px; */
+  width: 100%;
+  align-items: center;
+}
+
+.card-main {
+  display: flex;
+  width: 55%;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  color: #8f8f8f;
+  background: #fff;
+  background-clip: padding-box;
+  border-radius: 20px;
+  max-height: 230px;
+}
+
+.card-main:hover {
+  cursor: pointer;
+}
+
+.card-main:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -3px;
+  border-radius: inherit;
+  background: linear-gradient(230.46deg, #595096, #ffc695, #432fbf);
+}
+.cap-ect {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.img-card {
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.card-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 2%;
+  margin-top: 0.5%;
+  color: rgb(62, 62, 62);
+  margin-block-end: 0;
+}
+
+.search-btn{
+  background :none;
+  border: none;
+  height: 40px;
+  width: 40px;
+  
+}
+.card-date {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 2%;
+  color: rgb(0, 0, 0);
+}
+.card-description {
+  margin-top: -2%;
+  padding-left: 2%;
+  color: #8e8e8e;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
+
+.cardsave{
+  position: absolute;
+  top: 8%;
+  right: 0%;
+}
+
+.detail-Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  border-top-width: 0.5px;
+  border-top-style: solid;
+  border-top-color: #b3b3b3;
+}
+.details-leftsection {
+  margin: 0.5rem;
+}
+.details-rightsection {
+  background-color: #f5f5f5 !important;
+  border-radius: 6px;
+  box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+  color: #4a4a4a;
+  display: block;
+  padding: 1.25rem;
+  margin: 0.5rem;
+  width: 30%;
+}
+.details-rightsection-buttonsave {
+  background-color: transparent;
+  border-color: #ff3860;
+  color: #ff3860;
+  box-sizing: border-box;
+  border-width: 1px;
+  cursor: pointer;
+  justify-content: center;
+  padding: calc(0.375em - 1px) 0.75em;
+  text-align: center;
+  white-space: nowrap;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.25em;
+}
+.cardsave {
+  margin-right: 0.75rem;
+  margin-bottom: 0.5rem;
+  float: right;
+}
+.details-info-rightsection-email {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.favourite-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.event-card {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.no-data-found {
+  text-align: center;
+};
+
+@media only screen and (max-width: 1000px) {
+  .details-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    border-top-width: 0.5px;
+    border-top-style: solid;
+    border-top-color: #b3b3b3;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .dscrp{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 55;
+  }
+
+  .card-main {
+    display: flex;
+    width: 90%;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #8f8f8f;
+    background: #fff;
+    background-clip: padding-box;
+    border-radius: 20px;
+    max-height: 150px;
+  }
+  .cap-ect {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .img-card {
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .card-title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 2%;
+    margin-top: 0.5%;
+    color: rgb(62, 62, 62);
+    margin-block-end: 0;
+  }
+  .card-date {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-left: 2%;
+    color: rgb(0, 0, 0);
+  }
+  .card-description {
+    font-size: 0.8rem;
+    margin-top: -2%;
+    padding-left: 2%;
+    color: #8e8e8e;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+
+  }
+  .cardsave{
+    position: absolute;
+    top: 8%;
+    right: 0%;
+  }
+  .NavLinking {
+    text-decoration: none;
+    margin: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 900;
+    border-radius: 13px;
+  }
+  .searching-events{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 55;
+    text-align: center;
+  }
+  .In-put {
+    height: 40px;
+    width: 60%;
+    border-radius: 15px;
+  }
+
+  .no-data-found{
+    text-align: center;
+  }
+
+  .detail-Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    border-top-width: 0.5px;
+    border-top-style: solid;
+    border-top-color: #b3b3b3;
+  }
+  .details-leftsection {
+    margin: 0.5rem;
+  }
+  .details-leftsection-img{
+    width: 100%;
+  }
+  .details-leftsection-desc{
+    font-size: 0.8rem;
+  }
+  .details-rightsection {
+    width: 90%;
+  }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .dscrp{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 55;
+    text-align: center;
+  }
+
+  .card-main {
+    display: flex;
+    width: 95%;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #8f8f8f;
+    background: #fff;
+    background-clip: padding-box;
+    border-radius: 20px;
+    max-height: 120px;
+  }
+  .cap-ect {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .img-card {
+    max-width: 100px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .card-title {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-left: 2%;
+    margin-top: 0.5%;
+    color: rgb(62, 62, 62);
+    margin-block-end: 0;
+  }
+  .card-date {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding-left: 2%;
+    color: rgb(0, 0, 0);
+  }
+  .card-description {
+    font-size: 0.6rem;
+    margin-top: -2%;
+    padding-left: 2%;
+    color: #8e8e8e;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+
+  }
+  .cardsave{
+    position: absolute;
+    top: 8%;
+    right: 0%;
+  }
+  .NavLinking {
+    text-decoration: none;
+    margin: 0.5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 900;
+    border-radius: 13px;
+  }
+
+  .searching-events{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 55;
+    text-align: center;
+  }
+  .title-search{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .In-put {
+    height: 40px;
+    width: 60%;
+    border-radius: 15px;
+  }
+  .no-data-found{
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .detail-Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    border-top-width: 0.5px;
+    border-top-style: solid;
+    border-top-color: #b3b3b3;
+  }
+  .details-leftsection {
+    margin: 0.5rem;
+  }
+  .details-leftsection-img{
+    width: 100%;
+  }
+  .details-leftsection-desc{
+    font-size: 0.8rem;
+  }
+  .details-rightsection {
+    width: 80%;
+  }
+
+}
